@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001
 
 app.use(
   cors({
-  origin: "http://localhost:5173"
+  origin: ["http://localhost:5173", "https://thinkboard-frontend-seven.vercel.app"]
 })); // to handle the cors errors
 //middleware
 app.use(express.json()); // this middleware will parse the JSON bodies ie. in this care req.body 
